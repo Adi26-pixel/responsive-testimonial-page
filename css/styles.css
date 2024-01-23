@@ -1,0 +1,164 @@
+/* 
+============
+Font
+============
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+/* 
+============
+Variables
+============
+ */
+
+:root {
+  /* colors */
+
+  --clr-yellowish: #f5c044;
+  --clr-green: #4ca154;
+  --clr-black: #18181b;
+  --clr-darkGray: #52525a;
+  --clr-lightGary: #d4d4d8;
+  --clr-offWhite: #fafaf9;
+  --clr-white: #ffffff;
+
+  /* Font Family */
+  --ff-primary: "Sora", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-family: var(--ff-primary);
+  background: var(--clr-offWhite);
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+}
+
+/* 
+============
+Top section
+============
+ */
+
+.top_section {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1rem;
+}
+
+.bg-star {
+  background: var(--clr-yellowish);
+  font-size: 1.25rem;
+  padding: 0.65rem;
+  border-radius: 50%;
+  margin-bottom: 5rem;
+  z-index: -1;
+}
+
+.top_section h1 {
+  font-size: 2.25rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+.top_section p {
+  font-size: 1.25rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: var(--clr-darkGrayGary);
+  max-width: 35rem;
+}
+
+.top_section ul {
+  list-style: none;
+  font-size: 0.875rem;
+  color: var(--clr-darkGray);
+}
+
+.top_section ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.top_section ul li:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.top_section ul li:nth-child(3) {
+  margin-top: 1rem;
+}
+
+/* 
+============
+Bottom Section
+============
+ */
+
+.bottom_section .card:first-child {
+  float: inline-end;
+}
+
+.bottom_section .card:last-child {
+  float: inline-start;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.9rem 2.3rem;
+  width: 22rem;
+  height: 13rem;
+  box-shadow: 5px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card .social_icon {
+  width: 5rem;
+}
+
+.card_icons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card_text h4 {
+  font: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.card_text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.card_1 {
+  margin-bottom: 2rem;
+}
